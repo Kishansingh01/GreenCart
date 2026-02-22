@@ -21,7 +21,7 @@ const port= process.env.PORT || 4000;
 await connectDB();
 connectCloudinary();
 // Allow multiple origins 
-const allowedOrigins=['http://localhost:5173']
+const allowedOrigins=['http://localhost:5174']
 
 app.post('/stripe',express.raw({type:'application/json'}),stripeWebhooks)
 
@@ -44,3 +44,4 @@ app.listen(port, async()=>{
     console.log(`Server is running on http://localhost:${port}`)
 })
 
+// Hello kishan

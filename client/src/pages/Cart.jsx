@@ -80,6 +80,7 @@ const getUserAddress = async () => {
                 })
                 if(data.success){
                     window.location.replace(data.url)
+                   
                 }
                 else{
                     toast.error(data.message)
