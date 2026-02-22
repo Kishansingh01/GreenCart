@@ -21,7 +21,7 @@ const port= process.env.PORT || 4000;
 await connectDB();
 connectCloudinary();
 // Allow multiple origins 
-const allowedOrigins=['http://localhost:5174']
+const allowedOrigins=['http://localhost:5174','https://greencartfrontend-three.vercel.app']
 
 app.post('/stripe',express.raw({type:'application/json'}),stripeWebhooks)
 
